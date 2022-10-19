@@ -62,14 +62,16 @@ class Chef extends Person {
 const pers1 = new Person ('Bailey', 29, 'hazel');
 const pers2 = new Person ('Josh', 29, 'hazel');
 const post1 = new PostalWorker ('Jan', 64, 'blue');
-const chef1 = new Chef ('Alberto', 43, 'brown')
+const post2 = new PostalWorker ('Arturo', 37, 'grey' );
+const chef1 = new Chef ('Alberto', 43, 'brown');
+const chef2 = new Chef ('Elizabetta', 42, 'brown');
 
-Chef.lovesFood();
+Chef.chefsKiss();
 Person.askStatus();
 Person.respond ();
 PostalWorker.petThePuppies();
 
-const people = [pers1, pers2, post1, chef1, gov1];
+const people = [pers1, pers2, post1, post2, chef1, chef2, gov1];
 
 
 
