@@ -211,45 +211,143 @@ const myNum = 7;
 console.log(thomsCloset) */
 
 //IV Functions
-//A
+//B
 /*let name = "Captain Reynolds"
 function printCool(name){
     console.log(`${name} is cool`)
-} */
+} 
 
-//B
-/*function calculateCube(num){
+//C
+function calculateCube(num){
     console.log(num ** 3);
 }
 calculateCube(5); */
 
-//C
-const vowel = ["a", "e", "i", "o", "u"];
-function isVowel() {
-    if (isVowel === vowel[""]) {
+//D
+/*function isVowel(letter) {    
+    const vowels = ["a", "e", "i", "o", "u"];
+    let input = letter.toLowerCase();
+    if (vowels.includes(input === true)) {
         return true
     }
-    else if (isVowel() !== vowel[""]) {
+    else {
         return false
     }
 }
-console.log(isVowel("e"))
+console.log(isVowel("e")); //The one that I tried....but would only 
+// returned false, Nhan and Roosevelt helped us get to the answer down
+//below, I edited mine just a bit
 
-//D
-/*function getTwoLengths(string1, string2) {
-    if string1 = "Hank" {
+function isVowel(character){
         
-    }
-}
+    let AEIOU = ["a","e","i","o","u"];
+    
+    let  input = character.toLowerCase();
+     if (AEIOU.includes(input)=== true){
+         return true;
+       } else{
+     return false;
+      }
+     }
+ console.log(isVowel('a')); */
+
 
 //E
+/*function getTwoLengths(string1, string2) {
+   return [string1.length, string2.length]
+   }
+   console.log(getTwoLengths("Hank", "Hippopopalous")); */
+ 
+//calling the funticon inside the console.log the result is the return inthe funtion
+
+
+
 //F
+/*function getMultipleLengths(strings) {
+    const output = [];
+    return [string1.length, string2.length, string3.length]
+}
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
+
+/* I started to edit my code above, but Roosevelt showed us his code and
+it made more sense */
+
+//getMultipleLengths
+/*function getMultipleLengths(strings){
+    const output = [];
+    for(let string of strings){
+        output.push(string.length);
+    }
+    return output;
+} */
+
+
+
 //G
+ /*function maxOfThree(num1, num2, num3) {
+    if (num1 >= num2 && num1 >= num3) 
+        return console.log(`${num1} is the largest number`);
+     else if (num2 >= num1 && num2 >= num3)
+        return console.log(`${num2} is the largest number`);
+     else (num3 >= num2 && num3 >= num1)
+        return console.log(`${num3} is the largest number`) ; 
+ }
+ console.log(maxOfThree(5, 28, 75)); //It did make it output wrong at first, but 
+ //ended up working, but Dulce pointed out that I may miss some cases. So I also put
+ // Nhan's conditions
+ /*function maxOfThree(a,b,c){
+    if (a >= b && a >=c){ 
+         if (a === b && a > c) { //
+            return a;
+        } else if(a === c && a > b ){
+            return a;
+         }else if (a > b && a > c){
+            return a;
+        } else if (a === b && b === c) {
+            return "they are equal"
+        } 
+    } else if(b >= a && b >= c){
+          if (b === c && b >a ){
+            return b;
+          } else if(b>a && b >c){
+            return b;
+          }     
+    } else if(c > a && c > b){
+      return c; 
+    }  
+}
+console.log(maxOfThree(17, 11, 17));
+
+//Roosevelt's Code:
+//maxOfThree
+/*function maxOfThree(a,b,c){
+    let max = a;
+    if(b > max) max = b;
+    if(c > max) max = c;
+    return max;
+}
+// a , b , c
+// max = a;
+// max < b -> max = b;
+// max < c -> max = c;
+
+ */
+
 //H
-*/
+/*
+    function printLongestWord(words){
+        let longest = words [0];
+        for (let i = 1; i < words.length; i++) {
+            if(words[i].length > longest.length) longest = words [i];
+        }
+        return longest;
+    }
+ */
+    //Really struggled with this one. Roosevelt helped us
+
 // Objects
 
-/*
+
 let user = {
     name: "Henry the Brave",
     email: "henryDaBravest@yahoo.com",
@@ -282,6 +380,7 @@ user.friend.purchased.push("The One Ring")
 user.friend.purchased.push("A latte")
 //console.log(user.friend.purchased[1])
 
+//Loops
 for (let i = user.purchased.length; i <= 3; i += 1) {
     console.log(`${user.name} has bought ${user.purchased}`);
 }
@@ -290,15 +389,24 @@ for (let i = user.friend.purchased.length; i <= 3; i += 1) {
     console.log(`${user.friend.name} has bought ${user.friend.purchased}`);
 }
 
-
+//Functions
 function updateUser() {
-   user.age ++
+      user.age++;
+      user.name.toUpperCase();
 }
-console.log(user.age)
+function oldAndLoud (person) {
+    person.age++;
+    person.name.toUpperCase();
+    return person;
+}
+console.log(oldAndLoud(user));
 
-user.name.toUpperCase() */
 
-//Get support with part G and functions
+
+
+
+
+
 
 
  
